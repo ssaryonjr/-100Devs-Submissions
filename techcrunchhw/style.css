@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    paddig: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+nav {
+    width: 10%;
+    padding: 0 auto;
+    float: left;
+    height: 100vh;
+    padding-top: 15px;
+}
+
+a {
+    display: block;
+    margin-bottom: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    clear: both;
+}
+
+h3 {
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+}
+
+
+main {
+    width: 85%;
+    float: left;
+    height: 60VH;
+    padding-top: 8px;
+}
+
+aside {
+    width: 40%;
+    float: left;
+    height: 80vh;
+    margin-left: 5rem;
+}
+
+section {
+    float: left;
+}
+
+.login {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 33px;
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+h5 {
+    color: grey;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h3, h1, span, h5, .china-fintech {
+    float: left;
+    clear: both;
+}
+
+.china-fintech {
+    width: 100%;
+}
+
+i {
+    font-size: 20px;
+    color: grey;
+}
+
+.logo {
+    float: left;
+}
+
+.aside-title {
+    font-size: 3rem;
+    padding-bottom: .5rem;
+    float: left;
+    clear: both;
+}
+
+.aside-subtitle {
+    font-size: 1.6rem;
+    float: left;
+    clear: both;
+    margin-bottom: 2rem;
+}
+
+
+.aside-section {
+    border-bottom: 1px solid grey;
+}
+
+.main-content {
+    margin: 0 auto;
+}

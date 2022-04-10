@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    border: solid black 3px;
+    background: brown;
+    width: 100%;
+    height: 15vh;
+    clear: both;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    height: 70vh;
+    border: solid black 3px;
+    background: green;
+    float: left;
+}
+
+section {
+    float:left;
+    width: 40%;
+    height: 70vh;
+    border: solid black 3px;
+    background: pink;
+}

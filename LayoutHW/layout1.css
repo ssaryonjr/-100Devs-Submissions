@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    width: 100%;
+    border: solid black 3px;
+    background: green;
+    height: 15vh;
+    clear: both;
+}
+
+div {
+    float: left;
+    height: 40vh;
+    border: solid black 3px;
+    background: rgb(22, 170, 160);
+    width: 50%;
+}
+
+section {
+    width: 33.3333%;
+    height: 30vh;
+    border: solid 3px black;
+    background: rgb(201, 58, 58);
+    float: left;
+}
+
