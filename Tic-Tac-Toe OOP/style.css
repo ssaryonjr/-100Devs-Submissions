@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+}
+
+body{
+    background-color: rgb(100, 184, 111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+main {
+    display: grid; 
+    width: 375px;
+    height: 375px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 0px;
+}
+
+.square {
+    height: 125px;
+    width: 125px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+    font-size: 80px;
+}
+
+.sq1 {
+    border-bottom: 6px solid rgb(255, 255, 255);
+}
+
+.sq2 {
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+    border-bottom: 6px solid white;
+
+}
+
+
+.sq3 {
+    border-bottom: 6px solid white;
+}
+
+.sq4{
+    border-bottom: 6px solid white;
+}
+
+.sq5 {
+    border-right: 6px solid white;
+    border-left: 6px solid white;
+    border-bottom: 6px solid white;
+}
+
+.sq6 {
+    border-bottom: 6px solid white;
+}
+
+.sq8 {
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+}
