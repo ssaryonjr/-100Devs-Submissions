@@ -33,7 +33,7 @@ const TicTacToe = {
 		document.querySelectorAll('.square').forEach((item) =>
 			item.addEventListener('click', (e) => {
 				TicTacToe.determineMark(e)
-				this.turn = !this.turn
+				this.turn = !this.turn //Alternates between true and false aka ('X' and 'O')
 			}),
 		)
 	},
@@ -47,33 +47,12 @@ const TicTacToe = {
 			(subArray) => {
 				check1 = isSubset(board, subArray)
 				if (check1) {
-					this.turn ? (player = this.player1) : this.player2
+					this.turn ? (player = this.player1) : (player = this.player2)
 					document.querySelector('h1').innerHTML = `You win ${player}`
 				}
 			},)
+
 	},
 }
 
 TicTacToe.addEventToSquares()
-
-
-
-
-
-// const board = {
-    
-
-
- 
-
-// }
-
-
-// document.querySelectorAll('.square').forEach(square => {
-//     square.addEventListener('click', selectSquare)
-// })
-
-// function selectSquare(e){
-//     if (e.target.innerText !== '') return //If a string ('x' or 'o') has already been passed in, do not overwrite it.
-//     e.target.innerText = 'x'   
-// }
