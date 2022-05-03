@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     centerSlides: true,
     centerSlidesBounds: true,
-    centerInsufficientSlides: true,
+    // centerInsufficientSlides: true,
     // loop: true,
   
     // If we need pagination
@@ -32,12 +32,12 @@ const swiper = new Swiper('.swiper', {
     },
     // when window width is >= 480px
     680: {
-      slidesPerView: 3,
+      slidesPerView: 2 || 1,
       spaceBetween: 30
     },
     // when window width is >= 640px
     940: {
-      slidesPerView: 3,
+      slidesPerView: 4 || 2,
       spaceBetween: 40
     }
   }
@@ -55,14 +55,14 @@ const swiper = new Swiper('.swiper', {
           let slideContainer = document.querySelector('.swiper-wrapper')
           let slides = document.querySelector('.swiper-slide')
           console.log(slides)
-          let clonedSlides = slides.cloneNode(true)
-        for (let i = 0; i < 3; i++){
-         slideContainer.append(clonedSlides)
-
+        for (let i = 0; i < data.drinks.length; i++){
+         let clonedSlide = slides.cloneNode(true)
+         slideContainer.appendChild(clonedSlide)
+         document.querySelector('.drink-img').src = data.drinks[i].strDrinkThumb
+          document.querySelector('.drink-name').innerText = data.drinks[i].strDrink
+          document.querySelector('.drink-details').innerText = data.drinks[i].strInstructions
         }
-       document.querySelector('.drink-img').src = data.drinks[1].strDrinkThumb
-          document.querySelector('.drink-name').innerText = data.drinks[1].strDrink
-          document.querySelector('.drink-details').innerText = data.drinks[1].strInstructions
+  
 
      //Planned on creating a for loop that will iterate through every object from the API (currently theres 6) and displaying them on the page by copying the swiper-slide element. Just not sure how I can get it to loop through and do that multiple times.
 
