@@ -52,12 +52,17 @@ const swiper = new Swiper('.swiper', {
       console.log(data.drinks)
 
 
-        let slides = document.querySelector('.swiper-slide')
-        let clonedSlides = slides.cloneNode(true)
+          let slideContainer = document.querySelector('.swiper-wrapper')
+          let slides = document.querySelector('.swiper-slide')
+          console.log(slides)
+          let clonedSlides = slides.cloneNode(true)
+        for (let i = 0; i < 3; i++){
+         slideContainer.append(clonedSlides)
 
-        document.querySelector('.drink-img').src = data.drinks[1].strDrinkThumb
-      document.querySelector('.drink-name').innerText = data.drinks[1].strDrink
-      document.querySelector('.drink-details').innerText = data.drinks[1].strInstructions
+        }
+       document.querySelector('.drink-img').src = data.drinks[1].strDrinkThumb
+          document.querySelector('.drink-name').innerText = data.drinks[1].strDrink
+          document.querySelector('.drink-details').innerText = data.drinks[1].strInstructions
 
      //Planned on creating a for loop that will iterate through every object from the API (currently theres 6) and displaying them on the page by copying the swiper-slide element. Just not sure how I can get it to loop through and do that multiple times.
 
