@@ -21,7 +21,7 @@ const swiper = new Swiper('.swiper', {
     },
   
     // Default parameters
-  slidesPerView: 1,
+  slidesPerView: 4,
   spaceBetween: 10,
   // Responsive breakpoints
   breakpoints: {
@@ -32,12 +32,12 @@ const swiper = new Swiper('.swiper', {
     },
     // when window width is >= 480px
     680: {
-      slidesPerView: 2 || 1,
+      slidesPerView: 2,
       spaceBetween: 30
     },
     // when window width is >= 640px
     940: {
-      slidesPerView: 4 || 2,
+      slidesPerView: 4,
       spaceBetween: 40
     }
   }
@@ -54,8 +54,10 @@ const swiper = new Swiper('.swiper', {
 
           let slideContainer = document.querySelector('.swiper-wrapper')
           let slides = document.querySelector('.swiper-slide')
-          console.log(slides)
-        for (let i = 0; i < data.drinks.length; i++){
+
+
+
+        for (let i = 0; i < 2; i++){
          let clonedSlide = slides.cloneNode(true)
          slideContainer.appendChild(clonedSlide)
          document.querySelector('.drink-img').src = data.drinks[i].strDrinkThumb
