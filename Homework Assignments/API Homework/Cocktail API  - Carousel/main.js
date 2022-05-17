@@ -55,7 +55,9 @@ const swiper = new Swiper('.swiper', {
           let slideContainer = document.querySelector('.swiper-wrapper')
           let slides = document.querySelector('.swiper-slide')
 
-
+        data.drinks.forEach(drink =>{
+          console.log(drink)
+        })
 
         for (let i = 0; i < 2; i++){
          let clonedSlide = slides.cloneNode(true)
