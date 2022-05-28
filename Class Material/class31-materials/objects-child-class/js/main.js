@@ -1,17 +1,19 @@
 //Create an a class and extend it - Can be anything you would like it to be! 
-class Animal{
+class Animal {
     constructor(name){
-        this.name = name
+        this.name = name;
     }
     speak(){
         console.log(`${this.name} makes a sound`)
     }
 }
-class Dog extends Animal{
-    constructor(name,breed){
-        super(name)
-        this.breed = breed
-    } 
+
+
+class Cat extends Animal {
+    constructor(name, legs, color){
+        super(name, legs)
+        this.color = color;
+    }
 }
 
-let simba = new Dog('Simba', 'Sheperd')
+const Simba = new Cat('Simba', 4, 'Black')
