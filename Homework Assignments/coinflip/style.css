@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.829);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+img {
+    width: 200px;
+}
+
+button {
+    width: 200px;
+    height: 35px;
+    background-color: rgb(168, 62, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+}
+
+span{
+    color: rgb(0, 132, 255);
+}
